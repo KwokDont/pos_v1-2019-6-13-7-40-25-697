@@ -47,7 +47,7 @@ const drawReceipt = barcodes => {
         total += item.price * item.num - offer;
         offerNum = 0;
     });
-    result += '----------------------\n总计：' + total.toFixed(2) + '(元)\n节省：' + offerPrice+'(元)\n**********************';
+    result += '----------------------\n总计：' + total.toFixed(2) + '(元)\n节省：' + offerPrice.toFixed(2)+'(元)\n**********************';
     return result;
 }
 
